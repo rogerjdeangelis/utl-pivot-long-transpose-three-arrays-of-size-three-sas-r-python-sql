@@ -1,0 +1,7 @@
+{
+  "bundle": "t001_pivot_sql_union_corr",
+  "source_file": "utl-pivot-long-transpose-three-arrays-of-size-three-sas-r-python-sql.sas",
+  "source_blob_sha": "f3a0d0824416797d06d659d7b6519414b894e54b",
+  "source_commit": "e7442ece3044cae0826c353372324a8bf845c455",
+  "notes": "Solution 1 (SAS SQL): pivots three arrays of size three from wide to long via PROC SQL UNION CORR. Input built from the author's cards4 block (7 rows). Only edit vs. upstream: dropped 'libname sd1 \"d:/sd1\"' so SRDB/WANT land in WORK; the DATA step, the three UNION CORR selects, and the ORDER BY are verbatim. Produces WORK.WANT with 21 rows (7 IDs x 3 days), matching the author's documented output."
+}
